@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy JAR app to Azure Web App - syedbaqirali-web-api
+name: Build and deploy JAR app to Azure Web App - sba-web-api
 
 on:
 push:
@@ -47,7 +47,7 @@ url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'syedbaqirali-web-api'
+          app-name: 'sba-web-api'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_0ec0f2ab1e9946faa6d3fd5761cc5984 }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_41d2ca0e8d864936b64702674da77a1c }}
           package: '*.jar'
